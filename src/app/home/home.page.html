@@ -1,0 +1,58 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-menu-toggle *ngFor="let item of menulist">
+      <ion-button (click)="redirect(item)">{{item}}</ion-button>
+    </ion-menu-toggle>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-content>
+      <ion-button fill="clear" (click)="redirect('tabs/messages')">
+        <ion-icon slot="start" name="star"></ion-icon>Messages
+      </ion-button>
+      <ion-button fill="clear" (click)="redirect('tabs/form')">
+        <ion-icon slot="start" name="star"></ion-icon>Form
+      </ion-button>
+      <ion-button fill="clear" (click)="redirect('tabs/modale-form')">
+        <ion-icon slot="start" name="star"></ion-icon>Module-Form
+      </ion-button>
+      <ion-button fill="clear" (click)="redirect('tabs/list')">
+        <ion-icon slot="start" name="star"></ion-icon>List
+      </ion-button>
+    </ion-content>
+  </ion-content>
+</div>
+
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+<!-- <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
